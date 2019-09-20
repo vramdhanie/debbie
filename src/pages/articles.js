@@ -1,24 +1,18 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
-import Hero from "../components/hero"
-import Banner from "../components/banner"
+import Header from "../components/header"
 import ArticleList from "../components/articleList"
 
 const Article = ({ data }) => {
   console.log(data)
   const {
     mdx: { edges: articles },
-    articleBg,
   } = data
 
   return (
     <Layout>
-      <Hero img={articleBg.childImageSharp.fluid}>
-        <Banner>
-          <h1>Articles</h1>
-        </Banner>
-      </Hero>
+      <Header />
       <ArticleList articles={articles} />
     </Layout>
   )

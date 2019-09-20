@@ -11,13 +11,21 @@ const Featured = ({ className, children }) => {
 }
 
 export default styled(Featured)`
-  background: var(--mainWhite);
   height: 100vh;
   padding-top: 2rem;
+  color: var(--primaryText);
   .centre {
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  .content {
+    font-size: 1.2rem;
+  }
+
+  .author {
+    text-align: right;
   }
 
   @media screen and (min-width: 980px) {

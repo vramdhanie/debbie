@@ -21,4 +21,5 @@ export default styled(Hero)`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: width 2s;
 `

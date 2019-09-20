@@ -27,7 +27,7 @@ const Footer = ({ className }) => {
         ))}
       </div>
       <section className="faded">
-        <div>© {new Date().getFullYear()} Vincent Ramdhanie</div>
+        <div>© {new Date().getFullYear()} Deborah Eckert</div>
         <div>
           Built with
           <span className="gatsby attribution">

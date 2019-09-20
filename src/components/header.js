@@ -6,7 +6,6 @@ import styled from "styled-components"
 
 import { FaAlignRight } from "react-icons/fa"
 import links from "../constants/links"
-import social from "../constants/social"
 import Logo from "./logo"
 
 const Header = ({ className, siteTitle }) => {
@@ -36,18 +35,6 @@ const Header = ({ className, siteTitle }) => {
             )
           })}
         </ul>
-        <div className="nav-social-links">
-          {social.map((item, index) => (
-            <a
-              key={index}
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {item.icon}
-            </a>
-          ))}
-        </div>
       </div>
     </nav>
   )
@@ -62,7 +49,9 @@ Header.defaultProps = {
 }
 
 export default styled(Header)`
-  position: fixed;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+
   .nav-header {
     display: flex;
     justify-content: space-between;

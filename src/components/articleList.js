@@ -19,7 +19,8 @@ const ArticleList = ({ className, articles }) => {
 }
 
 export default styled(ArticleList)`
-  padding: 4rem 0;
+  padding: 5rem 0;
+  height: 100vh;
 
   h1 {
     text-align: center;

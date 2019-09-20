@@ -52,7 +52,8 @@ const Form = ({ className }) => {
 }
 
 export default styled(Form)`
-  padding: 4rem 0;
+  padding: 5rem 0;
+  height: 100vh;
   .center {
     width: 80vw;
     margin: 0 auto;
