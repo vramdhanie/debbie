@@ -19,4 +19,8 @@ export default styled(Featured)`
     max-width: 800px;
     margin: 0 auto;
   }
+
+  @media screen and (min-width: 980px) {
+    flex: 1;
+  }
 `

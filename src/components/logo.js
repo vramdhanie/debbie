@@ -5,10 +5,10 @@ const Logo = ({ className }) => {
   return (
     <div className={className}>
       <div className="main_Text">
-        Gatsby
-        <span className="main_highlight">Starter</span>
+        Deborah
+        <span className="main_highlight">Eckert</span>
       </div>
-      <div className="sub_text">Vincent</div>
+      <div className="sub_text">Artist</div>
     </div>
   )
 }

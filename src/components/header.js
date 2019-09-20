@@ -62,8 +62,7 @@ Header.defaultProps = {
 }
 
 export default styled(Header)`
-  background: var(--primaryDark);
-
+  position: fixed;
   .nav-header {
     display: flex;
     justify-content: space-between;
