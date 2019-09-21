@@ -9,16 +9,27 @@ import Title from "../components/title"
 const Collection = ({ location, className }) => {
   return (
     <Layout>
-      <SEO title={location.state.collection} />
+      <SEO title={location.state ? location.state.collection : "Collection"} />
       <Header />
-      <Title title={location.state.collection} />
+      <Title title={location.state ? location.state.collection : ""} />
       <section className={className}>
-        {location.state.pieces.map((piece, index) => (
-          <Modal piece={piece} key={index} />
-        ))}
+        {location.state
+          ? location.state.pieces.map((piece, index) => (
+              <Modal piece={piece} key={index} />
+            ))
+          : ""}
       </section>
     </Layout>
   )
+}
+
+Collection.defaultProps = {
+  location: {
+    state: {
+      collection: "",
+      pieces: [],
+    },
+  },
 }
 
 export default styled(Collection)`
