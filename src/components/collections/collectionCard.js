@@ -2,8 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import Img from "gatsby-image"
 
-import BackgroundImage from "gatsby-background-image"
-
 const CollectionCard = ({ className, img, title }) => {
   return (
     <div className={className}>
@@ -41,8 +39,9 @@ export default styled(CollectionCard)`
     transform: translate(-50%, -50%);
     text-decoration: none;
     font-size: 2rem;
+    font-weight: bold;
     color: var(--primaryDark);
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 9px rgba(255, 255, 255, 1);
   }
 
   .title:hover {

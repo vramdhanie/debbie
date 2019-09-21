@@ -30,6 +30,4 @@ const IndexPage = ({ className }) => (
   </Layout>
 )
 
-export default styled(IndexPage)`
-  font-size: 1.4rem;
-`
+export default styled(IndexPage)``

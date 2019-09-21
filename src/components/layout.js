@@ -80,6 +80,7 @@ export default styled(Layout)`
     overflow: scroll;
     height: 100vh;
     background: var(--secondaryDark);
+    transition: width 2s ease-in-out;
   }
 
   .icons a {
