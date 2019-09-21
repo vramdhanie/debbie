@@ -14,6 +14,7 @@ export default styled(Featured)`
   height: 100vh;
   padding-top: 2rem;
   color: var(--primaryText);
+  overflow: auto;
   .centre {
     width: 90%;
     max-width: 800px;
